@@ -23,7 +23,7 @@
 
 **Task preparation**: I'm not using the DEVASC build, so I had to additionally install `sshpass` and `ansible` itself.  
   
-**Task implementation**: The subfolder contained the [`hosts`](/sources/task 2 — ansible/hosts) and [`ansible_tasks`](/sources/task 2 — ansible/ansible_tasks.yml) files. The apache2 webserver is installed on the remote hosts specified in the [`hosts`](/sources/task 2 — ansible/hosts). We can also specify a *.cfg file, but to accomplish this task, the default config will be sufficient.  
+**Task implementation**: The subfolder contained the [`hosts`](/sources/task 2 -- ansible/hosts) and [`ansible_tasks`](/sources/task 2 -- ansible/ansible_tasks.yml) files. The apache2 webserver is installed on the remote hosts specified in the [`hosts`](/sources/task 2 -- ansible/hosts). We can also specify a *.cfg file, but to accomplish this task, the default config will be sufficient.  
   
 **Task troubleshooting**: There were no problems in completing this task.  
     
