@@ -14,7 +14,7 @@
 **Task verification**:  
   
 <p align="center">
-  <img width="500"  src="/sources/img/Skills2022_task_001_000.png">
+  <img width="600"  src="/sources/img/Skills2022_task_001_000.png">
 </p>  
 
 ## Ansible Skills Test
@@ -34,17 +34,17 @@ Apache installation:
 `ansible-playbook -v ansible_tasks.yml -i hosts`  
 
 <p align="center">
-  <img width="500"  src="/sources/img/Skills2022_task_002_000.png">
+  <img width="600"  src="/sources/img/Skills2022_task_002_000.png">
 </p>
 
 <p align="center">
-  <img width="500"  src="/sources/img/Skills2022_task_002_001.png">
+  <img width="600"  src="/sources/img/Skills2022_task_002_001.png">
 </p>    
   
 Ping:  
 
 <p align="center">
-  <img width="500"  src="/sources/img/Skills2022_task_002_002.png">
+  <img width="600"  src="/sources/img/Skills2022_task_002_002.png">
 </p>  
   
   
@@ -63,7 +63,7 @@ Ping:
 Pull docker container:  
 
 <p align="center">
-  <img width="500"  src="/sources/img/Skills2022_task_003_000.png">
+  <img width="600"  src="/sources/img/Skills2022_task_003_000.png">
 </p>  
 
 Run docker container:  
@@ -77,31 +77,61 @@ Run docker container:
 ```  
   
 <p align="center">
-  <img width="500"  src="/sources/img/Skills2022_task_003_001.png">
+  <img width="600"  src="/sources/img/Skills2022_task_003_001.png">
 </p> 
 
 `sudo docker ps`  
   
 <p align="center">
-  <img width="500"  src="/sources/img/Skills2022_task_003_002.png">
+  <img width="600"  src="/sources/img/Skills2022_task_003_002.png">
 </p>   
 
 `sudo docker logs ntp`  
   
 <p align="center">
-  <img width="500"  src="/sources/img/Skills2022_task_003_003.png">
+  <img width="600"  src="/sources/img/Skills2022_task_003_003.png">
 </p>  
   
 `sudo ntpdate -q 192.168.64.2`  
   
 <p align="center">
-  <img width="500"  src="/sources/img/Skills2022_task_003_004.png">
+  <img width="600"  src="/sources/img/Skills2022_task_003_004.png">
 </p>  
    
    
 ## Jenkins
 ### CI/CD Pipelinr using Jenkins
 > Task description: Create a Jenkins pipeline.  
+  
+**Task preparation**: ][Jenkins](https://hub.docker.com/_/jenkins) 
+  
+**Task implementation**: The subfolder contained the [`hosts`](/sources/task_2/hosts) and [`ansible_tasks`](/sources/task_2/ansible_tasks.yml) files. The apache2 webserver is installed on the remote hosts specified in the [`hosts`](/sources/task_2/hosts). We can also specify a *.cfg file, but to accomplish this task, the default config will be sufficient.  
+  
+**Task troubleshooting**: There were no problems in completing this task.  
+    
+**Task verification**:  
+  
+`sudo docker pull jenkins/jenkins` 
+
+`sudo docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins`
+
+
+`Jenkins URL: http://localhost:8080/`
+  
+<p align="center">
+  <img width="600"  src="/sources/img/Skills2022_task_002_000.png">
+</p>
+
+<p align="center">
+  <img width="600"  src="/sources/img/Skills2022_task_002_001.png">
+</p>    
+  
+Ping:  
+
+<p align="center">
+  <img width="600"  src="/sources/img/Skills2022_task_002_002.png">
+</p>  
+
 
 ## Unit Testing
 > Task description: Create a unittest script in Python that asserts the output of all the functions in the given Python module.  
