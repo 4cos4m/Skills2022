@@ -103,34 +103,50 @@ Run docker container:
 ### CI/CD Pipelinr using Jenkins
 > Task description: Create a Jenkins pipeline.  
   
-**Task preparation**: ][Jenkins](https://hub.docker.com/_/jenkins) 
+**Task preparation**:  This task required the use of a docker and [Jenkins](https://hub.docker.com/r/jenkins/jenkins), as well as a [docker container](https://hub.docker.com/r/cturra/ntp)*(which we used in the previous task)*  
   
-**Task implementation**: The subfolder contained the [`hosts`](/sources/task_2/hosts) and [`ansible_tasks`](/sources/task_2/ansible_tasks.yml) files. The apache2 webserver is installed on the remote hosts specified in the [`hosts`](/sources/task_2/hosts). We can also specify a *.cfg file, but to accomplish this task, the default config will be sufficient.  
+**Task implementation**: For this task, we need to run the docker container from the last task via Jenkins, using a script placed in its repository.  
   
 **Task troubleshooting**: There were no problems in completing this task.  
     
 **Task verification**:  
   
-`sudo docker pull jenkins/jenkins` 
-
-`sudo docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins`
-
-
-`Jenkins URL: http://localhost:8080/`
+First of all we had to get Jenkins itself up - install it according to the [manual](https://hub.docker.com/r/jenkins/jenkins) (for the latest version use `docker pull jenkins/jenkins`).  
+`sudo docker pull jenkins/jenkins`  
   
-<p align="center">
-  <img width="600"  src="/sources/img/Skills2022_task_002_000.png">
-</p>
+`sudo docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins`  
 
 <p align="center">
-  <img width="600"  src="/sources/img/Skills2022_task_002_001.png">
+  <img width="600"  src="/sources/img/Skills2022_task_004_000.png">
+</p>
+  
+After installation is complete, we get a key, which later allows us to log in.  
+
+<p align="center">
+  <img width="600"  src="/sources/img/Skills2022_task_004_001.png">
 </p>    
   
-Ping:  
+<p align="center">
+  <img width="600"  src="/sources/img/Skills2022_task_004_002.png">
+</p>  
+
+Create first admin user:  
 
 <p align="center">
-  <img width="600"  src="/sources/img/Skills2022_task_002_002.png">
+  <img width="600"  src="/sources/img/Skills2022_task_004_003.png">
 </p>  
+
+The task requires us to take code from our repository - specify it in the settings.  
+
+<p align="center">
+  <img width="600"  src="/sources/img/Skills2022_task_004_004.png">
+</p> 
+
+Enter the [script](/sources/task_4/ntp.sh) to be executed.  
+
+<p align="center">
+  <img width="600"  src="/sources/img/Skills2022_task_004_005.png">
+</p> 
 
 
 ## Unit Testing

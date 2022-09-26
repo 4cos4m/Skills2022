@@ -1,7 +1,5 @@
 #!/bin/sh
 
-apt install docker.io -y
-
 docker pull cturra/ntp
 
 docker run --name=task_4            \
