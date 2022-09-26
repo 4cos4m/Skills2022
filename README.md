@@ -111,9 +111,7 @@ Run docker container:
     
 **Task verification**:  
   
-First of all we had to get `Jenkins` itself up - install it according to the [`manual`](https://hub.docker.com/r/jenkins/jenkins) (for the latest version use `docker pull jenkins/jenkins`).  
-  
-`sudo docker pull jenkins/jenkins`  
+First of all we had to get `Jenkins` itself up — install it according to the [`manual`](https://hub.docker.com/r/jenkins/jenkins) (for the latest version use `docker pull jenkins/jenkins`).  
   
 `sudo docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins`  
 
@@ -137,7 +135,7 @@ Create first admin user:
   <img width="600"  src="/sources/img/Skills2022_task_004_003.png">
 </p>  
 
-The task requires us to take code from our repository - specify it in the settings.  
+The task requires us to take code from our repository — specify it in the settings.  
 
 <p align="center">
   <img width="600"  src="/sources/img/Skills2022_task_004_004.png">
@@ -152,3 +150,26 @@ Enter the [`script`](/sources/task_4/ntp.sh) to be executed.
 
 ## Unit Testing
 > Task description: Create a unittest script in Python that asserts the output of all the functions in the given Python module.  
+
+**Task preparation**: The [`unittest`](https://docs.python.org/3/library/unittest.html) module is used to run automated tests and is preventively put together with python.  
+  
+**Task implementation**: To run tests, the [`script`](/sources/task_5/Skills2022_task_005_unittest.py) posted in the repository will be used. During the study of the topic of automated tests through this module was used [`article`](https://habr.com/ru/company/otus/blog/481806/).   
+  
+**Task troubleshooting**: There were no problems in completing this task.  
+    
+**Task verification**:  
+
+Prescribe tests according to the assignment. You can also check out the [`script`](/sources/task_5/Skills2022_task_005_unittest.py) in the repository.
+
+<p align="center">
+  <img width="600"  src="/sources/img/Skills2022_task_005_000.png">
+</p>
+  
+Running the script:  
+
+`python3 Skills2022_task_005_unittest.py -v`  
+  
+<p align="center">
+  <img width="600"  src="/sources/img/Skills2022_task_005_001.png">
+</p>
+  
