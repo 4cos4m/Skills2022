@@ -103,15 +103,16 @@ Run docker container:
 ### CI/CD Pipelinr using Jenkins
 > Task description: Create a Jenkins pipeline.  
   
-**Task preparation**:  This task required the use of a docker and [Jenkins](https://hub.docker.com/r/jenkins/jenkins), as well as a [docker container](https://hub.docker.com/r/cturra/ntp)*(which we used in the previous task)*  
+**Task preparation**:  This task required the use of a docker and [`Jenkins`](https://hub.docker.com/r/jenkins/jenkins), as well as a [`docker container`](https://hub.docker.com/r/cturra/ntp) *(which we used in the previous task)*  
   
-**Task implementation**: For this task, we need to run the docker container from the last task via Jenkins, using a script placed in its repository.  
+**Task implementation**: For this task, we need to run the docker container from the last task via Jenkins, using a [`script`](/sources/task_4/ntp.sh) placed in its repository.  
   
 **Task troubleshooting**: There were no problems in completing this task.  
     
 **Task verification**:  
   
-First of all we had to get Jenkins itself up - install it according to the [manual](https://hub.docker.com/r/jenkins/jenkins) (for the latest version use `docker pull jenkins/jenkins`).  
+First of all we had to get `Jenkins` itself up - install it according to the [`manual`](https://hub.docker.com/r/jenkins/jenkins) (for the latest version use `docker pull jenkins/jenkins`).  
+  
 `sudo docker pull jenkins/jenkins`  
   
 `sudo docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins`  
@@ -142,7 +143,7 @@ The task requires us to take code from our repository - specify it in the settin
   <img width="600"  src="/sources/img/Skills2022_task_004_004.png">
 </p> 
 
-Enter the [script](/sources/task_4/ntp.sh) to be executed.  
+Enter the [`script`](/sources/task_4/ntp.sh) to be executed.  
 
 <p align="center">
   <img width="600"  src="/sources/img/Skills2022_task_004_005.png">
