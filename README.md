@@ -4,9 +4,9 @@
 ### Manage GitHub scripts and documents
 > Task description: Create a folder “Skills2022” in your DEVASC virtual machine and start a git repository.  
 
-**Task preparation**: This task required creating a folder locally on a Linux VM, initializing that folder, and uploading its contents to a githab repository.  
+**Task preparation**: This task required creating a folder locally on a Linux VM, initializing that folder, and uploading its contents to a github repository.  
   
-**Task implementation**: A repository on githab was created and a file `README.md` was written in the main directory, where the report on the term paper is formed and also created a directory `/sources` with subdirectories as `/img` etc.  
+**Task implementation**: A repository on github was created and a file `README.md` was written in the main directory, where the report on the term paper is formed and also created a directory `/sources` with subdirectories as `/img` etc.  
   
 
 **Task troubleshooting**: There were no problems in completing this task.  
